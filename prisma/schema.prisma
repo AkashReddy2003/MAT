@@ -1,0 +1,21 @@
+generator client{
+    provider="prisma-client-js"
+}
+
+datasource db{
+    provider="mongodb"
+    url=env("DATABASE_URL")
+}
+
+model stage{
+    id String @id @map("_id")
+    stage1 Int
+    stage2 Int
+    stage3 Int
+}
+
+
+model quantity{
+    id String @id @map("_id")
+    quantity Int
+}
