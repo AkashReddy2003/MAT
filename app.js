@@ -95,7 +95,7 @@ app.get("/inventory",async(req,res)=>{
 
 
 app.get("/",(req,res)=>{
-    res.semd("Inventory Management Backend Server");
+    res.send("Inventory Management Backend Server");
 })
 
 
